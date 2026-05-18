@@ -3,21 +3,28 @@ package com.alisveris;
 public class Main{
     public static void main(String[] args){
 
-        SepetArayuz sepet = new TemelSepet(500);
+    	
+        Sepet sepet = new Sepet();
 
-        sepet = new KuponDecorator(sepet);
-        sepet = new KargoDecorator(sepet);
+        sepet.observerEkle(new LogObserver());
+        sepet.observerEkle(new BildirimObserver());
 
-        OdemeSistemi odeme = new OdemeSistemi();
+        sepet.urunEkle(new Urun("Telefon", 1000));
+        sepet.urunEkle(new Urun("Laptop", 2000));
 
-        odeme.satinAl(sepet);
-        
+        System.out.println("Toplam: " + sepet.toplamTutar());
+
+
         
         Sepet sepet2 = new Sepet();
 
-        sepet2.observerEkle(new LogObserver());
-        sepet2.observerEkle(new BildirimObserver());
+        sepet2.urunEkle(new Urun("Telefon", 1000));
+        sepet2.urunEkle(new Urun("Laptop", 2000));
 
-        sepet2.urunEkle("Telefon");
+        sepet2.setIndirimStrategy(new OgrenciIndirimSrategy());
+        System.out.println("Öğrenci İndirimi: " + sepet2.indirimliToplam());
+
+        sepet2.setIndirimStrategy(new VIPIndirimStrategy());
+        System.out.println("VIP İndirimi: " + sepet2.indirimliToplam());
     }
 }
