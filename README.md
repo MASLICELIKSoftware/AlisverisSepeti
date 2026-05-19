@@ -38,7 +38,7 @@ Sepette gerçekleşen değişikliklerin gözlemlenmesi için kullanılmıştır.
 
 
 ### MİMARİ DİYAGRAM:
-![Mimari Diyagram](https://raw.githubusercontent.com/MASLICELIKSoftware/AlisverisSepeti/main/docs/diagrams/phase2-diagram.png)
+![Mimari Diyagram](docs/phase2-diagram.png)
 
 ### NASIL ÇALIŞTIRILIR?
 1) Proje Eclipse içerisine aktarılır.
