@@ -38,7 +38,7 @@ Sepette gerçekleşen değişikliklerin gözlemlenmesi için kullanılmıştır.
 
 
 ### MİMARİ DİYAGRAM:
-![Mimari Diyagram](docs/diagrams/phase2-diagram.png.png)
+![Mimari Diyagram](docs/diagrams/phase2-diagram.png)
 
 
 ### NASIL ÇALIŞTIRILIR?
