@@ -40,7 +40,6 @@ Sepette gerçekleşen değişikliklerin gözlemlenmesi için kullanılmıştır.
 ### MİMARİ DİYAGRAM:
 ![Mimari Diyagram](docs/diagrams/phase2-diagram.png)
 
-
 ### NASIL ÇALIŞTIRILIR?
 1) Proje Eclipse içerisine aktarılır.
 2) `Main.java` dosyası çalıştırılır.
